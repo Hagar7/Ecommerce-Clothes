@@ -1,0 +1,94 @@
+@import '../../index.scss';
+
+
+.side{
+    position: fixed;
+    right:0px;
+    top:0;
+    background-color: $blueClr;
+    width:300px;
+    height: 100vh;
+    white-space:nowrap;
+    z-index: 99999;
+    .header{
+        padding: 20px 15px;
+        height: 15vh;
+        display: flex;
+        justify-content: space-between;
+        background-color:$pinkClr;
+        color: $fontColor;
+        i{
+            cursor: pointer;
+        }
+    }
+    .body{
+        display: flex;
+        justify-content: space-between;
+        img{
+            width: 50px;
+            height: 50px;
+            border: 1px solid rgb(128, 128, 128,0.3);
+        }
+        .center{
+            color: #fff;
+            h6{
+                text-align: center;
+                font-size: 16px;
+            }
+            .amount{
+                border: 1px solid rgb(128, 128, 128,0.3);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 30px;
+                width: 100px;
+                padding: 10px;
+                span{
+                    font-size: 18px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .price{
+            display: flex;
+            flex-direction: column;
+            color: #fff;
+            i{
+                font-size: 20px;
+            }
+            span{
+                margin-top: 13px;
+            }
+        }
+    }
+    .brdr{
+        width:70%;
+        margin: auto;
+        border: 1px solid rgba(128, 128, 128, 0.7)
+    }
+    .btns{
+        text-align: center;
+
+
+        .myBtn{ 
+            margin-top: 15px; 
+            background-color:$pinkClr;
+            border: 1px solid $pinkClr;
+            transition: 0.5s all ease;
+            -webkit-transition: 0.5s all ease;
+            -moz-transition: 0.5s all ease;
+            -ms-transition: 0.5s all ease;
+            -o-transition: 0.5s all ease;
+            &:hover{
+                background-color:  $fontColor;
+                color:  black !important;
+                border: 1px solid $fontColor;
+            }
+        
+    }
+    }
+}
+
+
+
+

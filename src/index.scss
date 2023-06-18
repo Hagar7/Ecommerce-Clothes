@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300&family=Space+Mono:ital@1&family=Urbanist:wght@100&family=Xanh+Mono:ital@1&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;  
+  }
+  ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  body{
+    font-family: 'Roboto', sans-serif;
+  }
+  @mixin borderRadius($x){
+    border-radius: $x;
+    -webkit-border-radius: $x;
+    -moz-border-radius: $x;
+    -ms-border-radius: $x;
+    -o-border-radius: $x;
+  }
+
+  //var
+
+$bgColor:#131722;
+$lightBgColor:rgba(30, 41, 82, 0.7);
+$fontColor:#fff;
+$bgTransparent:rgba(19, 91, 117, 0.8) ;
+$borderColor:#a8a8a83d;
+$borderHeight:1px;
+$secondFontColor:#949cb0;
+$pinkClr:#f38393;
+$yellowClr: #fba93b;
+$blueClr:#2f2e2e;
+
+
+a,a:hover{
+    color: $fontColor !important;
+}
+
+.mainBG{
+    background-color:$pinkClr ;
+    @include borderRadius(3px);  
+  }
+
+  .secBG{
+    background-color:$pinkClr ;
+    @include borderRadius(3px); 
+    color: $fontColor !important;
+  }
+
+.txtFont{
+  color: $fontColor !important;
+  &:hover{
+    color: $fontColor !important;
+  }
+}

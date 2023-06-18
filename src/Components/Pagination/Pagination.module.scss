@@ -1,0 +1,14 @@
+@import '../../index.scss';
+
+
+
+.pagination{
+    span{
+        cursor: pointer;
+        color: $pinkClr;
+        &:hover{
+            color: $pinkClr;  
+        }
+    }
+    
+}

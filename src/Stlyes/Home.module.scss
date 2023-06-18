@@ -1,0 +1,15 @@
+@import '../index.scss';
+
+
+.home{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70vh;
+    .menu{
+        width:20%
+    }
+    .slider{
+        width: 80%;
+    }
+ }

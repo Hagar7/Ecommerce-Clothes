@@ -1,0 +1,94 @@
+@import '../../index.scss';
+
+.details{
+    .item{
+        box-shadow: 0px 0px 7px rgb(243, 131, 147,0.8);
+        margin: 20px 15px;
+        @include borderRadius(4px);
+        position: relative;
+        padding-bottom: 20px;
+        img{
+            @include borderRadius(4px);  
+        }
+         .Itemtitle{
+        font-size: 16px;
+        text-align: center;
+        margin: 20px 0;
+        color: $blueClr;
+        font-weight: bold;
+       }
+       .myBtn{
+        position: absolute;
+        top:5px;
+        right:5px;
+        background-color: $blueClr;
+        border: 1px solid $blueClr;
+       }
+       .ItemBtn{
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i{
+            height: 37px;
+            width: 37px;
+            background-color: $blueClr;
+            color:$fontColor;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include borderRadius(6px);
+            margin:0 10px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 22px;
+            &:hover{
+                color:$fontColor;
+                background-color:$pinkClr ; 
+                
+            }
+            
+        }
+        .Btn{
+            background-color: $blueClr;
+            border: 1px solid $blueClr; 
+            font-weight: bold;
+            color:$fontColor;
+            &:hover{
+                color:$fontColor;
+                background-color:$pinkClr ; 
+                border: 1px solid $pinkClr;  
+            }
+        }
+       }
+       
+    }
+    .Modal{
+
+        .modalTitle{
+            color: $pinkClr !important;
+            font-weight: 500;
+           }
+        .body{
+
+            .modalImg{
+                margin-bottom: 30px;
+                @include borderRadius(10px); 
+                text-align: center;
+                position: relative;
+            }
+            .modalPrice{
+                position: absolute;
+                top:20px;
+                right: 20px;
+                background-color: $pinkClr;
+                border: 1px solid $pinkClr;
+            }
+          
+        }
+        .modalClose{
+            background-color: $pinkClr;
+            border: 1px solid $pinkClr;
+        }
+    }
+}
